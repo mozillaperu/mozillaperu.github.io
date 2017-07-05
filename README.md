@@ -1,6 +1,15 @@
-# Mozilla Perú
-Entusiastas de tecnologías web, defensores de la web abierta y promotores #Firefox en español desde Perú
+## Proyectos
+
+### Rust
+* https://github.com/mozillaperu/rustpe
+* https://github.com/mozillaperu/poll
+
+### WebVR Camp
+* https://mozillaperu.github.io/aframe-presentation-kit/#/
+* https://mozillaperu.github.io/aframe-school/#/
+* https://mozillaperu.github.io/aframe-ejemplos/
 
 ## Involúcrate
 * [Actívate](https://t.me/activatemozpe)
-* [Visita nuestro canal de YouTube](youtube.com/mozillaperu)
+
+Visita nuestro [canal de YouTube](youtube.com/mozillaperu)
