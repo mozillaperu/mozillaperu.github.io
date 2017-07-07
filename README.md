@@ -7,9 +7,9 @@
 * https://github.com/mozillaperu/poll
 
 ### WebVR Camp
-* https://mozillaperu.github.io/aframe-presentation-kit/#/
-* https://mozillaperu.github.io/aframe-school/#/
-* https://mozillaperu.github.io/aframe-ejemplos/
+* [Introduccin a WebVR con A-Frame](http://mozilla.pe/aframe-presentation-kit/#/)
+* [Escuela A-Frame](http://mozilla.pe/aframe-school/#/)
+* http://mozilla.pe/aframe-ejemplos/
 
 ## Involúcrate
 * [Actívate](https://t.me/activatemozpe)
