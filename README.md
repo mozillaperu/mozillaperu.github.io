@@ -8,9 +8,9 @@ Mozilla Perú es la comunidad que reúne, en Perú, a usuarios de productos de M
 * https://github.com/mozillaperu/poll
 
 ### WebVR Camp
-* [Introducción a WebVR con A-Frame](http://www.mozilla.pe/aframe-presentation-kit/#/)
-* [Escuela A-Frame](http://www.mozilla.pe/aframe-school/#/)
-* [Ejemplos A-Frame](http://www.mozilla.pe/aframe-ejemplos/)
+* [Introducción a WebVR con A-Frame](https://www.mozilla.pe/aframe-presentation-kit/#/)
+* [Escuela A-Frame](https://www.mozilla.pe/aframe-school/#/)
+* [Ejemplos A-Frame](https://www.mozilla.pe/aframe-ejemplos/)
 
 ## Involúcrate
 * [Actívate](https://t.me/activatemozpe)
