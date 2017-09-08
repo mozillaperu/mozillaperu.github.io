@@ -1,5 +1,7 @@
 # Mozilla Perú
-Mozilla Perú es la comunidad que reúne, en Perú, a usuarios de productos de Mozilla y aquellos que comparten la visión de un Internet como bien público de libre acceso para todas las personas
+Mozilla Perú es la comunidad de usuarios, entusiastas y público en general que se identifica con el manifiesto de Mozilla, un proyecto con la misión de propiciar el desarrollo y la innovación en Internet como bien público de libre acceso para todas las personas.
+
+Somos entusiastas de las tecnologías web, defensores de la web abierta y promotores de Firefox en el Perú.
 
 ## Proyectos
 
