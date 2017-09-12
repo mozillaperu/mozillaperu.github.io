@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mozilla Perú</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Mozilla, Perú, Firefox, Web, WebVR, Rust">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//bootswatch.com/journal/bootstrap.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" media="screen">
+    </head>
+    <body>
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Ver menú</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ site.url }}">Mozilla Perú</a>
+                </div>
+
+                <nav class="collapse navbar-collapse"
+                    id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle"
+                                data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                Proyectos <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#rust">Rust</a></li>
+                                <li><a href="#webvr">WebVR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#involucrate">Involúcrate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        {{ content }}
+    </body>
+</html>
