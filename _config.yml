@@ -3,3 +3,6 @@
 
 markdown: redcarpet
 baseUrl: /
+sass:
+  sass_dir: _sass
+  style: :compressed
