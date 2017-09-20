@@ -2,6 +2,7 @@
 # description: Entusiastas de tecnologías web, defensores y promotores de la web abierta
 
 markdown: redcarpet
+url: https://www.mozilla.pe
 baseUrl: /
 sass:
   sass_dir: _sass
