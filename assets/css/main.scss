@@ -4,4 +4,11 @@
 // Main
 @import "bootstrap";
 @import "includes/fonts";
-@import "includes/base";
+
+body {
+  padding: 50px 0 70px;
+}
+
+.bg-dark {
+  background-color: #444;
+}
