@@ -27,21 +27,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseUrl }}evento">
-                        Evento <span class="badge badge-dark">Nuevo</span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ site.baseUrl }}estudioweb" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Estudio Web
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% for entry in site.categories.estudioweb %}
-                            <a class="dropdown-item" href="{{ entry.url }}">{{ entry.year }}</a>
-                        {% endfor %}
-                    </div>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Proyectos
@@ -55,6 +40,26 @@
                     <a class="nav-link" href="{{ site.baseUrl }}involucrate">
                         Involúcrate
                     </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Campañas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for entry in site.categories.manosalaobra %}
+                            <a class="dropdown-item" href="{{ entry.url }}">{{ entry.title }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ site.baseUrl }}estudioweb" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Estudio Web
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for entry in site.categories.estudioweb %}
+                            <a class="dropdown-item" href="{{ entry.url }}">{{ entry.year }}</a>
+                        {% endfor %}
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

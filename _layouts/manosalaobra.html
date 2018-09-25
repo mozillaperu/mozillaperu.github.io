@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row"><!-- justify-content-md-center -->
+        <article class="col-md-9 m-auto">
+            <header class="page-header text-center">
+                <h1>{{ page.title }}</h1>
+            </header>
+            <div>
+                <figure class="thumbnail text-center">
+                    <img class="img-fluid" src="{{ site.baseUrl }}{{ page.bannerImage }}" alt="Dark Funnel">
+                </figure>
+
+                {{ content }}
+            </div>
+        </article>
+    </div>
+</div>
