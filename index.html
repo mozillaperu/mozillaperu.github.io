@@ -11,27 +11,16 @@ layout: default
 </div -->
 <div class="container mt-4 mb-3">
     <div class="row justify-content-center">
-        <div class="col-9">
+        <div class="col-sm-11 col-md-9">
             <p class="lead text-center">
                 Mozilla Perú es la comunidad de usuarios, entusiastas y público en general que se identifica con el
                 <a href="https://www.mozilla.org/es-ES/about/manifesto/">manifiesto de Mozilla</a>, un proyecto con la
                 misión de propiciar el desarrollo y la innovación en Internet como bien público de libre acceso para
                 todas las personas.
             </p>
-            <h2 class="page-header" id="proyectos">Proyectos</h2>
             <div class="row">
-                <div class="col-sm">
-                    <h3 id="rust">Rust</h3>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/mozillaperu/rustpe">https://github.com/mozillaperu/rustpe</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mozillaperu/poll">https://github.com/mozillaperu/poll</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm">
+                <div class="col-md-8">
+                    <h2 class="page-header" id="proyectos">Proyectos</h2>
                     <h3 id="webvr">WebVR</h3>
                     <ul>
                         <li>
@@ -44,7 +33,36 @@ layout: default
                             <a href="https://www.mozilla.pe/aframe-ejemplos/">Ejemplos usando A-Frame</a>
                         </li>
                     </ul>
+                    <h3 id="rust">Rust</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/mozillaperu/rustpe">https://github.com/mozillaperu/rustpe</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mozillaperu/poll">https://github.com/mozillaperu/poll</a>
+                        </li>
+                    </ul>
                 </div>
+                <aside class="col-md-4">
+                    <h3>Blog</h3>
+                    <ul class="list-unstyled">
+                        {% for entry in site.categories.blog %}
+                            <li>
+                                <article>
+                                    <header>
+                                        <time datetime="{{ entry.date }}">{{ entry.date | date_to_string }}</time>
+                                        <h4>
+                                            <a href="{{ entry.url }}">
+                                                {{ entry.title }}
+                                            </a>
+                                        </h4>
+                                    </header>
+                                    {{ entry.excerpt }}
+                                </article>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
             </div>
         </div>
     </div>
