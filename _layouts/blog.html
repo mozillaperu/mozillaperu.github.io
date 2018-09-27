@@ -7,6 +7,9 @@ layout: default
         <article class="col-sm-10 offset-sm-1">
             <header>
                 <h1>{{ page.title }}</h1>
+                {% if page.subtitle %}
+                    <h2 class="h4">{{ page.subtitle }}</h2>
+                {% endif %}
                 <p>
                     Publicado el
                     <time datetime="{{ page.date }}">
@@ -26,8 +29,9 @@ layout: default
                             {% when '11' %}noviembre
                             {% when '12' %}diciembre
                         {% endcase %}
-                        {{ page.date | date: "de %Y." }}
+                        {{ page.date | date: "de %Y" }}
                     </time>
+                    por {{ page.author }}.
                 </p>
             </header>
             {{ content }}
