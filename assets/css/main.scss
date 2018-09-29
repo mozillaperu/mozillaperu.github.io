@@ -6,3 +6,36 @@
 body {
   font-family: "Zilla Slab", X-LocaleSpecific, sans-serif
 }
+
+.bg-papertoy {
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    background-image: url(../../img/papertoy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    -webkit-filter: blur(0.65rem);
+    -moz-filter: blur(0.65rem);
+    -o-filter: blur(0.65rem);
+    -ms-filter: blur(0.65rem);
+    filter: blur(0.65rem);
+    bottom: -1rem;
+    left: -1rem;
+    padding-top: 50%;
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+
+    h1, p {
+      text-shadow: 0px 0px 2px #000;
+    }
+  }
+}
