@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
     <header>
-        <h1 class="pb-5">{{ page.title }}, {{ page.year }}</h1>
+        <h1 class="pb-5">Resultados de la Encuesta Anual, {{ page.year }}</h1>
     </header>
     <nav class="nav">
         <a class="nav-link px-0 mr-4 {% if page.url == '/estudioweb' %}active{% endif %}" href="{{ site.url }}/estudioweb">Estudio Web</a>
@@ -23,7 +23,7 @@ layout: default
 
             <p> 
                 Los resultados completos aparecen en:
-                <a href="{{ site.url }}/download/{{ pdf_name }}" download="{{ page.title }}.pdf">{{ pdf_name }}</a>.
+                <a href="{{ site.url }}/download/{{ pdf_name }}" download="Estudio web {{ page.title }}.pdf">{{ pdf_name }}</a>.
             </p>
 
             {% if page.csv_link %}
@@ -31,7 +31,7 @@ layout: default
 
                 <p>
                     Asimismo, para las personas que quieren ver los datos sin procesar:
-                    <a href="{{ site.url }}/download/{{ csv_name }}" download="{{ page.title }}.csv">{{ csv_name }}</a>.
+                    <a href="{{ site.url }}/download/{{ csv_name }}" download="Estudio web {{ page.title }}.csv">{{ csv_name }}</a>.
                 </p>
             {% endif %}
         </div>
