@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article>
+    <header>
+        <h1 class="pb-5">{{ page.title }}, {{ page.year }}</h1>
+    </header>
+    <nav class="nav">
+        <a class="nav-link px-0 mr-4 {% if page.url == '/estudioweb' %}active{% endif %}" href="{{ site.url }}/estudioweb">Estudio Web</a>
+        {% for result_page in site.webdev_survey %}
+            <a class="nav-link px-0 mr-4 {% if page.url == result_page.url %}active{% endif %}" href="{{ site.url | append: result_page.url }}.html">
+                {{ result_page.year }}
+            </a>
+        {% endfor %}
+    </nav>
+    <hr>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-11 col-xl-9">
+            {{ content }}
+
+            {% assign file_name = 'MPEstudioWeb' | append: page.year %}
+            {% assign pdf_name = file_name | append: '.pdf' %}
+
+            <p> 
+                Los resultados completos aparecen en:
+                <a href="{{ site.url }}/download/{{ pdf_name }}" download="{{ page.title }}.pdf">{{ pdf_name }}</a>.
+            </p>
+
+            {% if page.csv_link %}
+                {% assign csv_name = file_name | append: '.csv' %}
+
+                <p>
+                    Asimismo, para las personas que quieren ver los datos sin procesar:
+                    <a href="{{ site.url }}/download/{{ csv_name }}" download="{{ page.title }}.csv">{{ csv_name }}</a>.
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</article>

@@ -1,0 +1,26 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Mozilla Perú">
+                <img src="/assets/images/mozilla/moz-fav-bw-rgb.png" alt="Mozilla" class="d-block" height="36">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mp-navbar" aria-controls="mp-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="mp-navbar">
+                <ul class="navbar-nav mr-auto">
+                    {% for item in site.data.navigation %}
+                        <li class="nav-item {% if page.url == item.link %}active{% endif %}">
+                            <a class="nav-link" href="{{ site.url|append: item.link }}">
+                                {{ item.name }}
+                                {% if page.url == item.link %}<span class="sr-only">(Actual)</span>{% endif %}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

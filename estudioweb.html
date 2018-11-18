@@ -1,0 +1,21 @@
+---
+layout: page
+title: 'Estudio: Situación de los Desarrolladores Web en el Perú'
+permalink: /estudioweb
+---
+<p>
+    Encuesta anual desarrollada por Mozilla Perú dirigida a peruanos o extranjeros residentes en Perú y que se dedican
+    al desarrollo de sitios o aplicaciones web.
+</p>
+<p class="lead">
+    <strong>Objetivo:</strong> Contar con un perfil del desarrollador web en Perú, la situación laboral en que se encuentra, las
+    tecnologías con las cuales está familiarizado y las formas en que adquiere nuevos conocimientos.
+</p>
+<h2>Resultados por año</h2>
+<ul class="list-inline">
+    {% for result_page in site.webdev_survey %}
+        <li class="list-inline-item">
+            <a href="{{ site.url | append: result_page.url }}.html">{{ result_page.year }}</a>
+        </li>
+    {% endfor %}
+</ul>

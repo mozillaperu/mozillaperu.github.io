@@ -1,0 +1,42 @@
+<h3>Blog</h3>
+<ul class="list-unstyled">
+    {% for entry in site.categories.blog %}
+        <li>
+            <article>
+                <header>
+                    <h5 class="mb-0">
+                        {% if entry.url != page.url %}
+                            <a href="{{ entry.url }}">
+                        {% endif %}
+                        {{ entry.title }}
+                        {% if entry.url != page.url %}
+                            </a>
+                        {% endif %}
+                    </h5>
+                    <time datetime="{{ entry.date }}" class="font-italic text-secondary">
+                        {{ entry.date | date: "%d de" }} 
+                        {% assign m = entry.date | date: "%-m" %}
+                        {% case m %}
+                            {% when '1' %}enero
+                            {% when '2' %}febrero
+                            {% when '3' %}marzo
+                            {% when '4' %}abril
+                            {% when '5' %}mayo
+                            {% when '6' %}junio
+                            {% when '7' %}julio
+                            {% when '8' %}agosto
+                            {% when '9' %}septiembre
+                            {% when '10' %}octubre
+                            {% when '11' %}noviembre
+                            {% when '12' %}diciembre
+                        {% endcase %}
+                        {{ entry.date | date: "de %Y" }}
+                    </time>
+                </header>
+                {% if entry.url != page.url %}
+                    {{ entry.excerpt }}
+                {% endif %}
+            </article>
+        </li>
+    {% endfor %}
+</ul>

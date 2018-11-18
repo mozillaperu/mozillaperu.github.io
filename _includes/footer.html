@@ -1,0 +1,20 @@
+<footer class="mofo-footer">
+    <div class="container">
+        <ul class="list-unstyled footer-links row justify-content-center">
+            {% for item in site.data.footer_links %}
+                <li class="col-auto">
+                    <a class="{{ item.icon_class }}" href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="org-info mozilla">
+            <div class="logo-container">
+                <a class="logo" href="https://mozilla.org"></a>
+            </div>
+            <p>
+                Mozilla es una organización global sin fines de lucro dedicada a ponerte en control de tu experiencia en línea y configurar el futuro de la web para el bien público.
+                Visítanos en <a href="https://mozilla.org">mozilla.org</a>.
+            </p>
+        </div>
+    </div>
+</footer>

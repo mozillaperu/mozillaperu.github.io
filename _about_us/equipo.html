@@ -1,0 +1,40 @@
+---
+layout: page-about-us
+title: Equipo
+name: Equipo
+---
+<p class="lead">Miembros que formaron y forman parte de Mozilla Perú</p>
+<div class="card-columns">
+    {% for member in site.data.team_members %}
+        <div class="card border-danger text-center">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{{ member.link }}">
+                        {{ member.name }}
+                    </a>
+                </h5>
+                <p class="card-text">{{ member.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<h2>Colaboradores</h2>
+<p>
+    Esta es una comunidad abierta, y como tal hay un grupo de personas que está (o estuvo) participando y aportando en
+    las actividades de la comunidad, ya sea de manera presencial o a distancia:
+</p>
+<ul class="list-inline text-center">
+    {% for collaborator in site.data.team_collaborators %}
+        <li class="list-inline-item">{{ collaborator.name }}</li>
+    {% endfor %}
+</ul>
+<h2>Amigos</h2>
+<p>
+    Hay un grupo especial de personas que, sin ser parte de la comunidad Mozilla Perú, han apoyado iniciativas nuestras
+    de manera dedicada y desinteresada.
+</p>
+<ul>
+    {% for friend in site.data.team_friends %}
+        <li><em>{{ friend.name }}</em>: {{ friend.description }}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<main class="row">
+    <article class="col-sm-8 col-md-9">
+        <header>
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+                <h2 class="h4">{{ page.subtitle }}</h2>
+            {% endif %}
+            <p class="font-italic text-secondary">
+                Publicado el
+                <time datetime="{{ page.date }}">
+                    {{ page.date | date: "%d de" }} 
+                    {% assign m = page.date | date: "%-m" %}
+                    {% case m %}
+                        {% when '1' %}enero
+                        {% when '2' %}febrero
+                        {% when '3' %}marzo
+                        {% when '4' %}abril
+                        {% when '5' %}mayo
+                        {% when '6' %}junio
+                        {% when '7' %}julio
+                        {% when '8' %}agosto
+                        {% when '9' %}septiembre
+                        {% when '10' %}octubre
+                        {% when '11' %}noviembre
+                        {% when '12' %}diciembre
+                    {% endcase %}
+                    {{ page.date | date: "de %Y" }}
+                </time>
+                por {{ page.author }}.
+            </p>
+        </header>
+
+        {% if page.bannerImage %}
+            <p>
+                <img class="img-fluid img-thumbnail mx-auto d-block" src="{{ site.url }}/assets/images/posts/{{ page.bannerImage }}">
+            </p>
+        {% endif %}
+
+        {{ content }}
+    </article>
+    <aside class="col-sm-4 col-md-3">
+        {% include blog_post_list.html %}
+    </aside>
+</main>

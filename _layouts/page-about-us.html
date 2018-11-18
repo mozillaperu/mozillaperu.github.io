@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article>
+    <header>
+        <h1 class="pb-5">{{ page.title }}</h1>
+    </header>
+    <nav class="nav">
+        <a class="nav-link px-0 mr-4 {% if page.url == '/nosotros' %}active{% endif %}" href="{{ site.url }}/nosotros">Nosotros</a>
+        {% for about_page in site.about_us %}
+            <a class="nav-link px-0 mr-4 {% if page.url == about_page.url %}active{% endif %}" href="{{ site.url | append: about_page.url }}.html">
+                {{ about_page.name }}
+            </a>
+        {% endfor %}
+    </nav>
+    <hr>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-11 col-xl-9">
+            {{ content }}
+        </div>
+    </div>
+</article>

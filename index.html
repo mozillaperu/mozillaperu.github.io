@@ -1,85 +1,47 @@
 ---
 layout: default
+title: moz:lla/pe
 ---
-
-<!-- div id="content" class="jumbotron jumbotron-fluid">
-    <div class="container">
+<div class="row">
+    <div class="col mx-5 my-4">
         <p class="lead text-center">
-            Somos entusiastas de las tecnologías web, defensores de la web abierta y promotores de Firefox en el Perú
+            Mozilla Perú es la comunidad de usuarios, entusiastas y público en general que se identifica con el
+            <a href="https://www.mozilla.org/es-ES/about/manifesto/">manifiesto de Mozilla</a>, un proyecto con la
+            misión de propiciar el desarrollo y la innovación en Internet como bien público de libre acceso para
+            todas las personas.
         </p>
-    </div>
-</div -->
-<div class="container mt-4 mb-3">
-    <div class="row justify-content-center">
-        <div class="col-sm-11 col-md-9">
-            <p class="lead text-center">
-                Mozilla Perú es la comunidad de usuarios, entusiastas y público en general que se identifica con el
-                <a href="https://www.mozilla.org/es-ES/about/manifesto/">manifiesto de Mozilla</a>, un proyecto con la
-                misión de propiciar el desarrollo y la innovación en Internet como bien público de libre acceso para
-                todas las personas.
-            </p>
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="page-header" id="proyectos">Proyectos</h2>
-                    <h3 id="webvr">WebVR</h3>
-                    <ul>
-                        <li>
-                            <a href="https://www.mozilla.pe/aframe-presentation-kit/#/">Introducción a WebVR con A-Frame</a>
-                        </li>
-                        <li>
-                            <a href="https://www.mozilla.pe/aframe-school/#/">Escuela A-Frame</a>
-                        </li>
-                        <li>
-                            <a href="https://www.mozilla.pe/aframe-ejemplos/">Ejemplos usando A-Frame</a>
-                        </li>
-                    </ul>
-                    <h3 id="rust">Rust</h3>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/mozillaperu/rustpe">https://github.com/mozillaperu/rustpe</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mozillaperu/poll">https://github.com/mozillaperu/poll</a>
-                        </li>
-                    </ul>
-                </div>
-                <aside class="col-md-4">
-                    <h3>Blog</h3>
-                    <ul class="list-unstyled">
-                        {% for entry in site.categories.blog %}
-                            <li>
-                                <article>
-                                    <header>
-                                        <h5 class="mb-0">
-                                            <a href="{{ entry.url }}">{{ entry.title }}</a>
-                                        </h5>
-                                        <time datetime="{{ entry.date }}">
-                                            {{ entry.date | date: "%d de" }} 
-                                            {% assign m = entry.date | date: "%-m" %}
-                                            {% case m %}
-                                                {% when '1' %}enero
-                                                {% when '2' %}febrero
-                                                {% when '3' %}marzo
-                                                {% when '4' %}abril
-                                                {% when '5' %}mayo
-                                                {% when '6' %}junio
-                                                {% when '7' %}julio
-                                                {% when '8' %}agosto
-                                                {% when '9' %}septiembre
-                                                {% when '10' %}octubre
-                                                {% when '11' %}noviembre
-                                                {% when '12' %}diciembre
-                                            {% endcase %}
-                                            {{ entry.date | date: "de %Y" }}
-                                        </time>
-                                    </header>
-                                    {{ entry.excerpt }}
-                                </article>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </aside>
+        <hr class="my-5">
+        <div class="row">
+            <div class="col">
+                <h3 id="webvr">WebVR</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.mozilla.pe/aframe-presentation-kit/#/">Introducción a WebVR con A-Frame</a>
+                        <p>Un framework web para construir experiencias VR</p>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.pe/aframe-school/#/">Escuela A-Frame</a>
+                        <p>Un curso interactivo sobre WebVR</p>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.pe/aframe-ejemplos/">Ejemplos usando A-Frame</a>
+                    </li>
+                </ul>
             </div>
+            <div class="col">
+                <h3 id="rust">Rust</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/mozillaperu/rustpe">https://github.com/mozillaperu/rustpe</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mozillaperu/poll">https://github.com/mozillaperu/poll</a>
+                    </li>
+                </ul>
+            </div>
+            <aside class="col">
+                {% include blog_post_list.html %}
+            </aside>
         </div>
     </div>
 </div>
