@@ -17,6 +17,21 @@ $info: $mobile-blue;
 $warning: $market-orange;
 $danger: $dino-red;
 
+html {
+    position: relative;
+    min-height: 100%;
+
+    body {
+        padding-bottom: 255px;
+    
+        footer.mofo-footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
 nav.nav {
     .nav-link.active {
         box-shadow: 0 3px $flame-yellow;
