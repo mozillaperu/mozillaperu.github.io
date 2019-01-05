@@ -8,3 +8,6 @@ collections:
   webdev_survey:
     output: true
     permalink: /estudioweb/:name
+  devtools_tips:
+    output: true
+    permalink: /devtools-tips/:slug

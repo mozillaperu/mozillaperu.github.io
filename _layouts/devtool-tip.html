@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<article>
+    <div class="row justify-content-center">
+        <div class="col col-md-7 order-lg-first">
+            <header class="pb-5">
+                <h1>Herramientas de Desarrollador Web</h1>
+                <h2 class="text-muted">
+                    Tip por
+                    <a href="https://twitter.com/{{ page.author }}" target="_blank" rel="nofollow">
+                        @{{ page.author }}
+                    </a>
+                </h2>
+            </header>
+                
+            <div class="h5">
+                {{ content }}
+            </div>
+        </div>
+
+        <div class="col col-md-5 float-lg-right">
+            {{ page.tweet }}
+        </div>
+
+        <div class="col-12">
+            <a href="{{ site.url }}/devtools-tips" class="btn btn-link">
+                Revisa todos los tips
+            </a>
+        </div>
+    </div>
+</article>
