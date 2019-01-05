@@ -28,7 +28,7 @@ permalink: /devtools-tips
                 {% if tip_page.image %}
                     <img class="card-img" src="{{ tip_page.image }}">
                 {% else if tip_page.video %}
-                    <video class="card-img" src="{{ tip_page.video }}" preload></video>
+                    <video class="card-img" src="{{ tip_page.video }}" autoplay></video>
                 {% endif %}
                 <div class="card-body">
                     <p class="card-text">
