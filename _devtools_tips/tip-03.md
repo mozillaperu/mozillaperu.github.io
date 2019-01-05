@@ -7,7 +7,7 @@ tweet: '<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">
 image: https://pbs.twimg.com/media/DQSyPTTWsAENsvH.jpg
 ---
 
-Mostrar los logs del lado del servidor también posible en las devtools de Firefox Quantum usando la extension
+Mostrar los logs del lado del servidor también es posible en las devtools de Firefox Quantum usando la extension
 ChromeLogger:
 
 <https://addons.mozilla.org/en-US/firefox/addon/chromelogger/>

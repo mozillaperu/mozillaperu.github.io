@@ -9,6 +9,6 @@ image: https://pbs.twimg.com/media/DTvmPhPXUAAnH02.jpg
 
 Hoy en Firefox Nightly:
 
-🖊️ Las fuentes que están siendo usadas actualmente en una propiedad font-family de CSS están subrayadas en el inspector, así sabes cuáles escogió el navegagor para un elemento dado 🖊️
+🖊️ Las fuentes que están siendo usadas actualmente en una propiedad font-family de CSS están subrayadas en el inspector, así sabrás cual(es) escogió el navegagor para un elemento dado 🖊️
 
 ¡Gracias a Michael Hoffman! [github.com/brisad](https://github.com/brisad)

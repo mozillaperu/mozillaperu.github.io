@@ -8,3 +8,5 @@ video: https://video.twimg.com/tweet_video/DYVV2TJX0AI2t3x.mp4
 ---
 
 Ejecuta `copy(obj)` en la Consola para copiar un objeto en el portapapeles del sistema operativo.
+
+¡Sí, también funciona en Firefox!
