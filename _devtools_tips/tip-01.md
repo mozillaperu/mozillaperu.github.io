@@ -10,5 +10,5 @@ image: https://pbs.twimg.com/media/DOwFyQZWkAAUWhr.jpg
 Con las devtools de Firefox hay múltiples formas de buscar un elemento a través de selectores CSS:
 
 - En el campo de búsqueda del inspector
-- A través de la barra de desarrolldor
+- A través de la barra de desarrollador
 - O a través de la consola con `document.querySelector(selector)`
