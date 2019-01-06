@@ -33,6 +33,10 @@ layout: default
             </p>
         </header>
 
+        <div class="lead">
+            {{ page.excerpt | markdownify }}
+        </div>
+
         {% if page.bannerImage %}
             <p>
                 <img class="img-fluid img-thumbnail mx-auto d-block" src="{{ site.url }}/assets/images/posts/{{ page.bannerImage }}">

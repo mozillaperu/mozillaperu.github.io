@@ -34,7 +34,7 @@
                     </time>
                 </header>
                 {% if entry.url != page.url %}
-                    {{ entry.excerpt }}
+                    {{ entry.excerpt | markdownify }}
                 {% endif %}
             </article>
         </li>

@@ -4,13 +4,8 @@ title: Dark Funnel
 categories: [blog]
 author: willy
 bannerImage: darkfunnel.png
-excerpt_separator: <!--more-->
+excerpt: La próxima oportunidad para ayudar a Mozilla llega entre el 17 y el 24 de septiembre.
 ---
-<p class="lead">Ey Mozilleros</p>
-
-La próxima oportunidad para ayudar a Mozilla llega entre el 17 y el 24 de septiembre.
-
-<!--more-->
 
 **Ayuda a Firefox a encontrar páginas que tienen botones no autorizados de descarga de Firefox registrándote para a participar en la campaña Detective Dark Funnel.**
 

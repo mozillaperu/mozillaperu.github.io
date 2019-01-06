@@ -5,7 +5,7 @@ subtitle: "@FirefoxDevTools tips"
 categories: [blog]
 bannerImage: devtools-tips.gif
 author: angelfqc
-excerpt: <p>Una nueva sección con tips que te ayudarán a usar mejor las <strong>Dev tools</strong> de Firefox.</p>
+excerpt: Una nueva sección con tips que te ayudarán a usar mejor las **DevTools** de Firefox.
 ---
 
 Estamos iniciando una [nueva sección]({{ site.url }}/devtools-tips) para ayudar a los desarrolladores web que utilizan
