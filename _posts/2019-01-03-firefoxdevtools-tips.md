@@ -3,7 +3,7 @@ layout: post
 title: Tips para usar las Firefox Developer Tools
 subtitle: "@FirefoxDevTools tips"
 categories: [blog]
-bannerImage: devtools-tips.gif
+image: devtools-tips.gif
 author: angelfqc
 excerpt: Una nueva sección con tips que te ayudarán a usar mejor las **DevTools** de Firefox.
 ---

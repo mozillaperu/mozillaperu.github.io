@@ -3,7 +3,7 @@ layout: post
 title: Dark Funnel
 categories: [blog]
 author: willy
-bannerImage: darkfunnel.png
+image: darkfunnel.png
 excerpt: La próxima oportunidad para ayudar a Mozilla llega entre el 17 y el 24 de septiembre.
 ---
 

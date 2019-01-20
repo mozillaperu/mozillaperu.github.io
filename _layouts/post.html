@@ -37,9 +37,9 @@ layout: default
             {{ page.excerpt | markdownify }}
         </div>
 
-        {% if page.bannerImage %}
+        {% if page.image %}
             <p>
-                <img class="img-fluid img-thumbnail mx-auto d-block" src="{{ site.url }}/assets/images/posts/{{ page.bannerImage }}">
+                <img class="img-fluid img-thumbnail mx-auto d-block" src="{{ site.url }}/assets/images/posts/{{ page.image }}">
             </p>
         {% endif %}
 
