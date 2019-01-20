@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt|markdownify|strip_html }}{% else %}{{ site.description }}{% endif %}">
-    <meta image="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/assets/images/nosotros/mozillaperu_wordmark_bglight_medium.png{% endif %}">
-    <meta name="og:title" content="{{ page.title }}">
-    <meta name="og:site_name" content="{{ site.title }}">
-    <meta name="og:locale" content="es_PE">
-    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt|markdownify|strip_html }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/assets/images/nosotros/mozillaperu_wordmark_bglight_medium.png{% endif %}">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt|markdownify|strip_html }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:creator" content="@mozillaperu">
-    <meta name="twitter:image:src" content="{% if page.image %}{{ page.image }}{% else %}{{ site.url }}/assets/images/nosotros/mozillaperu_wordmark_bglight_medium.png{% endif %}">
+    {% include meta.html %}
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/zilla-slab.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">

@@ -1,0 +1,35 @@
+{% if page.excerpt %}
+    {% assign pageDescription = page.excerpt | markdownify | strip_html | strip %}
+{% else }
+    {% assign pageDescription = site.description %}
+{% endif %}
+
+{% if page.image %}
+    {% assign tempPath = site.url | append: "/assets/images/" | append: page.image %}
+
+    {% if (site.url | append: "/assets/images/" | append: page.image) == tempPath %}
+        {% assign pageImage = tempPath %}
+    {% else %}
+        {% assign pageImage = page.image %}
+    {% endif %}
+{% else %}
+    {% assign pageImage = site.url | append: "/assets/images/nosotros/mozillaperu_wordmark_bglight_medium.png" %}
+{% endif %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="description" content="{{ pageDescription }}">
+<meta image="{{ pageImage }}">
+
+<meta name="og:title" content="{{ page.title }}">
+<meta name="og:site_name" content="{{ site.title }}">
+<meta name="og:locale" content="es_PE">
+<meta name="og:description" content="{{ pageDescription }}">
+<meta name="og:image" content="{{ pageImage }}">
+
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ pageDescription }}">
+<meta name="twitter:creator" content="@mozillaperu">
+<meta name="twitter:image:src" content="{{ pageImage }}">
