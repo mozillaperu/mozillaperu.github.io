@@ -31,9 +31,9 @@ permalink: /devtools-tips
                     <video class="card-img" src="{{ tip_page.video }}" autoplay></video>
                 {% endif %}
                 <div class="card-body">
-                    <p class="card-text">
-                        {{ tip_page.excerpt }}
-                    </p>
+                    <div class="card-text">
+                        {{ tip_page.excerpt | markdownify }}
+                    </div>
                     <div class="text-right">
                         <a href="{{ tip_page.url }}" class="card-link">
                             Ver tip <span aria-hidden="true">&rarr;</span>
