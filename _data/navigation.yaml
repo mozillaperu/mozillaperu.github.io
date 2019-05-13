@@ -1,5 +1,7 @@
 - name: Inicio
   link: /
+- name: Meetups
+  link: /meetups
 - name: Involúcrate
   link: /involucrate
 - name: Estudio Web
