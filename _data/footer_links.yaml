@@ -1,6 +1,6 @@
 - name: Discord
   link: https://discord.gg/rU2QZAx
-  icon_class: footer-link-info
+  icon_class: footer-link-chat
 - name: Telegram
   link: https://t.me/activatemozpe
   icon_class: footer-link-info
