@@ -11,3 +11,7 @@ collections:
   devtools_tips:
     output: true
     permalink: /devtools-tips/:slug
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
