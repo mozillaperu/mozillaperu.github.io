@@ -1,7 +1,7 @@
 - name: Inicio
   link: /
 - name: Meetups
-  link: /meetups/
+  link: https://community.mozilla.org/groups/mozilla-peru/?view=events
 - name: Involúcrate
   link: /involucrate
 - name: Estudio Web
