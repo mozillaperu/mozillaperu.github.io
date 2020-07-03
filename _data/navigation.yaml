@@ -3,6 +3,8 @@
 - name: Meetups
   link: https://community.mozilla.org/groups/mozilla-peru/?view=events
   external: true
+- name: DevTools Tips
+  link: /devtools-tips
 - name: Involúcrate
   link: /involucrate
 - name: Estudio Web
